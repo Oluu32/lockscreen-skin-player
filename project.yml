@@ -1,6 +1,8 @@
 name: LockSkinPlayer
 options:
   bundleIdPrefix: io.github.oluu32
+  projectFormat: xcode15_3
+  xcodeVersion: "15.4"
   deploymentTarget:
     iOS: "16.0"
 settings:
