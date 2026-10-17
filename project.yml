@@ -1,0 +1,36 @@
+name: LockSkinPlayer
+options:
+  bundleIdPrefix: io.github.oluu32
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  LockSkinPlayer:
+    type: application
+    platform: iOS
+    sources:
+      - path: LockSkinPlayer
+    info:
+      path: LockSkinPlayer/Info.plist
+      properties:
+        CFBundleDisplayName: Lock Skin Player
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen: {}
+        UIBackgroundModes: [audio]
+        LSSupportsOpeningDocumentsInPlace: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.github.oluu32.lockskinplayer
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: NO
+schemes:
+  LockSkinPlayer:
+    build:
+      targets:
+        LockSkinPlayer: all
